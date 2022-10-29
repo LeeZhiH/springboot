@@ -9,6 +9,10 @@ spring:
       url: jdbc:mysql://localhost:3306/zhiyin?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
       username: root
       password: 20020112lzh.
+  redis:
+    host: 192.168.31.213
+    port: 6379
+    database: 0
   mail:
     #配置smtp服务主机地址
     host: smtp.qq.com
@@ -33,15 +37,7 @@ spring:
         debug: true
 
 
-#  #邮件配置（自定义设置，主要配置了收件人和发件人，这些可以当做发送邮件的参数）
-#mail-config:
-#    environmental: 邮件测试
-#    # 发件人邮箱
-#    from: 发件人@foxmail.com
-#    # 收件人邮箱（抄送人）
-#    recipient:
-#      - "收件人1的邮箱@foxmail.com"
-#      - "收件人2的邮箱@qq.com"
+
 
 mybatis-plus:
   configuration:
