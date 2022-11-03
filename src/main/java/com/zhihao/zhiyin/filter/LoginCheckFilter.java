@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Locale;
 
 /**
  * @author 86159
@@ -36,7 +37,11 @@ public class LoginCheckFilter implements Filter {
             "/backend/**",
             "/front/**",
             "/user/sendMsg",
-            "/user/login"
+            "/user/login",
+            "/doc.html",
+            "/webjars/**",
+            "/swagger-resources",
+            "/v2/api-docs"
         };
         //判断本次请求是否需要处理
         boolean check = check(urls, requestURI);

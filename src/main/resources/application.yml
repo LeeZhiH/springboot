@@ -23,7 +23,7 @@ spring:
         password: 123456
     masterslave:
       # 读写分离配置
-      load-balance-algorithm-type: round_robin
+      load-balance-algorithm-type: round_robin  #轮巡
       # 最终的数据源名称
       name: dataSource
       # 主库数据源名称
